@@ -10,6 +10,8 @@ public class OrderDetails {
 	private Order order;
 	private List<Item> items;
 	
+	public OrderDetails() {
+	}
 	public OrderDetails(Order order, List<Item> items) {
 		this.order = order;
 		this.items = items;
@@ -27,5 +29,12 @@ public class OrderDetails {
 	public void setItems(List<Item> items) {
 		this.items = items;
 	}
+
+	@Override
+	public String toString() {
+		return "OrderDetails [order=" + order + ", items=" + items + "]";
+	}
+	
+	
 
 }

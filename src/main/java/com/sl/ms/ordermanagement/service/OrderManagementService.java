@@ -55,4 +55,16 @@ public class OrderManagementService {
 		orderRepository.delete(details.getOrder());
 		return "order deleted successfully!";
 	}
+
+
+	public void setOrderRepository(OrderRepository orderRepository) {
+		this.orderRepository = orderRepository;
+	}
+
+
+	public void setItemsRepository(ItemsRepository itemsRepository) {
+		this.itemsRepository = itemsRepository;
+	}
+	
+	
 }

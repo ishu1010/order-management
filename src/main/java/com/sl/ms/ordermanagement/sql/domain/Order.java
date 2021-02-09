@@ -54,6 +54,11 @@ public class Order {
 	public void setTotalAmount(Integer totalAmount) {
 		this.totalAmount = totalAmount;
 	}
+
+	@Override
+	public String toString() {
+		return "Order [id=" + id + ", name=" + name + ", totalAmount=" + totalAmount + "]";
+	}
 	
 	
 	
